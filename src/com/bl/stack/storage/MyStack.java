@@ -14,7 +14,19 @@ public class MyStack {
         myLinkedList.add(newNode);
     }
 
+    public INode peak(){
+        return myLinkedList.head;
+    }
+
+    public INode pop(){
+        return myLinkedList.pop();
+    }
+
     public void printStack() {
         myLinkedList.printMyNode();
+    }
+
+    public boolean isEmpty(){
+        return myLinkedList.isEmpty();
     }
 }

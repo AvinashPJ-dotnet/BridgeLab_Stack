@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class TestMyNode {
     @Test
-    public void given3NumbersWhenLinkedShouldPassedLinkedList() {
+    public void given3NumbersWhenPushToStackShouldPassedStack() {
         MyNode<Object> myFirstNode = new MyNode<>(56);
         MyNode<Object> mySecondNode = new MyNode<>(30);
         MyNode<Object> myThirdNode = new MyNode<>(70);
