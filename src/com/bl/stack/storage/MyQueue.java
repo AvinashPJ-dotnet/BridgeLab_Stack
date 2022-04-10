@@ -14,6 +14,10 @@ public class MyQueue {
         myLinkedList.append(newNode);
     }
 
+    public void deQueue(){
+        myLinkedList.pop();
+    }
+
     public INode getTop(){
         return myLinkedList.head;
     }

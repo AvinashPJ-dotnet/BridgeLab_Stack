@@ -22,4 +22,23 @@ public class TestMyQueue {
         boolean result= topNode == myFirstNode;
         Assertions.assertTrue(result);
     }
+
+    //UC4
+    @Test
+    public void given3NumberWhenDeletedLastElementShouldPassTheResult(){
+        MyNode<Integer> myFirstNode = new MyNode<>(56);
+        MyNode<Integer> mySecondNode = new MyNode<>(30);
+        MyNode<Integer> myThirdNode = new MyNode<>(70);
+        MyQueue myQueue = new MyQueue();
+        myQueue.enQueue(myFirstNode);
+        myQueue.enQueue(mySecondNode);
+        myQueue.enQueue(myThirdNode);
+        myQueue.printQueue();
+
+        myQueue.deQueue();
+        myQueue.printQueue();
+        INode topNode=myQueue.getTop();
+        boolean result= topNode == mySecondNode;
+        Assertions.assertTrue(result);
+    }
 }
